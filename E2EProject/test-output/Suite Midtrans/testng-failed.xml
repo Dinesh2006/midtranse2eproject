@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite Midtrans]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="resources.listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Validating Payment Flow(failed)">
+    <classes>
+      <class name="Academy.MidtransPaymentFlowTest">
+        <methods>
+          <include name="setupBeforeMethod"/>
+          <include name="setupAfterMethod"/>
+          <include name="failedPaymentFlow"/>
+          <include name="setupAfterTest"/>
+          <include name="successPaymentFlow"/>
+          <include name="setupBeforeTest"/>
+        </methods>
+      </class> <!-- Academy.MidtransPaymentFlowTest -->
+    </classes>
+  </test> <!-- Validating Payment Flow(failed) -->
+</suite> <!-- Failed suite [Suite Midtrans] -->
